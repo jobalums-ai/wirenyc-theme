@@ -150,9 +150,9 @@ get_header();
 <section id="about" class="py-20 md:py-32 bg-card">
 	<div class="container">
 		<div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-			<div style="opacity: 1; transform: none;"><span class="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold uppercase tracking-wider mb-4">About NYCE</span>
-				<h2 class="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6">New York's Most Trusted <span class="text-primary">Electrical Contractor</span></h2>
-				<p class="text-muted-foreground text-lg mb-6">Since 2003, NYCE has been providing top-quality electrical services throughout the five boroughs. Our commitment to excellence, safety, and customer satisfaction has made us the go-to choice for thousands of New Yorkers.</p>
+			<div style="opacity: 1; transform: none;"><span class="inline-block px-4 py-2 bg-primary/10 text-secondary rounded-full text-sm font-semibold uppercase tracking-wider mb-4">About us</span>
+				<h2 class="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6">New York's <span class="text-primary">Most Trusted</span> <span class="text-secondary">Electrical Contractor</span></h2>
+				<p class="text-muted-foreground text-lg mb-6">Third generation electrician Daniel Weissman currently holds master electrical licenses in New York City, New Jersey, Delaware, Florida, USVI and Connecticut.</p>
 				<p class="text-muted-foreground mb-8">Whether you need a simple outlet repair or a complete commercial installation, our team of certified electricians delivers professional results every time. We take pride in our work and stand behind every job we do.</p>
 				<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
 					<div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-5 h-5 text-primary flex-shrink-0">
