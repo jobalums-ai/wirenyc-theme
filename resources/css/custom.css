@@ -155,3 +155,10 @@ body {
 .animate-fade-in:nth-child(7) {
 	animation-delay: 1.3s; /* 0.6s delay */
 }
+
+input,
+textarea,
+select {
+	font-family: "Inter", sans-serif !important;
+	@apply h-10 rounded px-2 text-secondary bg-slate-700 border	border-slate-600 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all duration-200;
+}

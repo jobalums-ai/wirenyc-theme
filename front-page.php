@@ -275,7 +275,176 @@ get_header();
 	</div>
 </section>
 
+<section id="contact" class="py-20 md:py-32 bg-background">
+	<div class="container">
+		<motion.div
+			initial={{ opacity: 0, y: 20 }}
+			whileInView={{ opacity: 1, y: 0 }}
+			viewport={{ once: true }}
+			transition={{ duration: 0.5 }}
+			class="text-center mb-16">
+			<span class="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold uppercase tracking-wider mb-4">
+				Get In Touch
+			</span>
+			<h2 class="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
+				Request a Free Quote
+			</h2>
+			<p class="text-lg text-muted-foreground max-w-2xl mx-auto">
+				Ready to get started? Contact us today for a free estimate on your electrical project.
+			</p>
+		</motion.div>
 
+		<div class="grid lg:grid-cols-2 gap-12">
+			<motion.div
+				initial={{ opacity: 0, x: -20 }}
+				whileInView={{ opacity: 1, x: 0 }}
+				viewport={{ once: true }}
+				transition={{ duration: 0.5 }}
+				class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+				<div
+					class="p-6 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors duration-300">
+					<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
+						<span class="w-6 h-6 text-primary">
+						</span>
+					</div>
+					<h3 class="font-display font-semibold text-foreground mb-1">Call Us</h3>
+					<p class="text-primary font-semibold">(212) 555-1234</p>
+					<p class="text-muted-foreground text-sm">24/7 Emergency Line</p>
+				</div>
+				<div
+					class="p-6 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors duration-300">
+					<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
+						<span class="w-6 h-6 text-primary">
+						</span>
+					</div>
+					<h3 class="font-display font-semibold text-foreground mb-1">Email Us</h3>
+					<p class="text-primary font-semibold">info@nycelectric.com</p>
+					<p class="text-muted-foreground text-sm">Quick Response</p>
+				</div>
+				<div
+					class="p-6 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors duration-300">
+					<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
+						<span class="w-6 h-6 text-primary">
+						</span>
+					</div>
+					<h3 class="font-display font-semibold text-foreground mb-1">Visit Us</h3>
+					<p class="text-primary font-semibold">123 Electric Ave</p>
+					<p class="text-muted-foreground text-sm">New York, NY 10001</p>
+				</div>
+				<div
+					class="p-6 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors duration-300">
+					<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
+						<span class="w-6 h-6 text-primary">
+						</span>
+					</div>
+					<h3 class="font-display font-semibold text-foreground mb-1">Hours</h3>
+					<p class="text-primary font-semibold">Mon-Sat: 7AM-8PM</p>
+					<p class="text-muted-foreground text-sm">Emergency: 24/7</p>
+				</div>
+
+				<div class="sm:col-span-2 p-6 bg-accent rounded-xl text-center">
+					<h3 class="font-display text-2xl font-bold text-accent-foreground mb-2">
+						Electrical Emergency?
+					</h3>
+					<p class="text-accent-foreground/90 mb-4">
+						Don't wait! Our emergency team is available 24/7.
+					</p>
+					<Button variant="outline" size="lg" class="border-accent-foreground text-accent-foreground hover:bg-accent-foreground hover:text-accent" asChild>
+						<a href="tel:+12125551234" class="flex items-center gap-2">
+							<Phone class="w-5 h-5" />
+							Call Now: (212) 555-1234
+						</a>
+					</Button>
+				</div>
+			</motion.div>
+
+			<form onSubmit={handleSubmit} class="p-6 md:p-8 bg-card rounded-xl border border-border">
+				<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+					<div>
+						<label htmlFor="name" class="block text-sm font-medium text-foreground mb-2">
+							Full Name *
+						</label>
+						<Input
+							id="name"
+							name="name"
+							onChange={handleChange}
+							required
+							placeholder="John Smith"
+							class="border-border" />
+					</div>
+					<div>
+						<label htmlFor="email" class="block text-sm font-medium text-foreground mb-2">
+							Email Address *
+						</label>
+						<Input
+							id="email"
+							name="email"
+							type="email"
+							onChange={handleChange}
+							required
+							placeholder="john@example.com"
+							class="border-border" />
+					</div>
+				</div>
+
+				<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+					<div>
+						<label htmlFor="phone" class="block text-sm font-medium text-foreground mb-2">
+							Phone Number *
+						</label>
+						<Input
+							id="phone"
+							name="phone"
+							type="tel"
+							onChange={handleChange}
+							required
+							placeholder="(212) 555-0000"
+							class="border-border" />
+					</div>
+					<div>
+						<label htmlFor="service" class="block text-sm font-medium text-foreground mb-2">
+							Service Needed
+						</label>
+						<select
+							id="service"
+							name="service"
+							onChange={handleChange}
+							class="w-full h-10 px-3 rounded-md border border-border text-foreground focus:outline-none focus:ring-2 focus:ring-ring">
+							<option value="">Select a service</option>
+							<option value="residential">Residential</option>
+							<option value="commercial">Commercial</option>
+							<option value="industrial">Industrial</option>
+							<option value="emergency">Emergency</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="mb-6">
+					<label htmlFor="message" class="block text-sm font-medium text-foreground mb-2">
+						Project Details
+					</label>
+					<textarea
+						id="message"
+						name="message"
+						onChange={handleChange}
+						placeholder="Tell us about your electrical project..."
+						rows={4}
+						class="border-border resize-none"></textarea>
+				</div>
+
+				<Button type="submit" variant="hero" size="lg" class="w-full" disabled={isSubmitting}>
+					Get Free Quote
+				</Button>
+
+				<p class="text-center text-muted-foreground text-sm mt-4">
+					We respond to all inquiries within 24 hours.
+				</p>
+			</form>
+		</div>
+	</div>
+</section>
 <?php
 get_footer();
 ?>
