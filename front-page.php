@@ -12,24 +12,26 @@ get_header();
 
 				<div class="space-y-6 flex flex-col">
 					<!-- ✨🌟 ⚡-->
-					<div class="flex flex-wrap order-3 lg:order-1">
-						<div class="mr-2 inline-flex items-center gap-2 pl-3 pr-4 py-1 tracking-wider bg-background/50 backdrop-blur-sm border border-gray-200/15 smooth-transition hover:bg-black/30 mb-2 rounded-3xl justify-center">
+					<div class="flex flex-wrap order-3 lg:order-1 fade-in-group">
+						<div class="mr-2 inline-flex items-center gap-2 pl-3 pr-4 py-1 tracking-wider bg-background/50 backdrop-blur-sm border border-gray-200/15 smooth-transition hover:bg-black/30 mb-2 rounded-3xl justify-center fade-in-item">
 							<span class="text-sm text-white text-shadow text-shadow-black"><b class="text-lg">💡</b> Lighting Upgrades</span>
 						</div>
-						<div class="mr-2 inline-flex items-center gap-2 pl-3 pr-4 py-1 tracking-wider bg-background/50 backdrop-blur-sm border border-gray-200/15 smooth-transition hover:bg-black/30 mb-2 rounded-3xl justify-center">
+						<div class="mr-2 inline-flex items-center gap-2 pl-3 pr-4 py-1 tracking-wider bg-background/50 backdrop-blur-sm border border-gray-200/15 smooth-transition hover:bg-black/30 mb-2 rounded-3xl justify-center fade-in-item">
 							<span class="text-sm text-white text-shadow text-shadow-black"><b class="text-lg">✨</b> Fixture Installations</span>
 						</div>
-						<div class="inline-flex items-center gap-2 pl-3 pr-4 py-1 tracking-wider bg-background/50 backdrop-blur-sm border border-gray-200/15 smooth-transition hover:bg-black/30 mb-2 rounded-3xl justify-center">
+						<div class="inline-flex items-center gap-2 pl-3 pr-4 py-1 tracking-wider bg-background/50 backdrop-blur-sm border border-gray-200/15 smooth-transition hover:bg-black/30 mb-2 rounded-3xl justify-center fade-in-item">
 							<span class="text-sm text-white text-shadow text-shadow-black"><b class="text-lg">⚡</b> Power Needs</span>
 						</div>
-						<div class="inline-flex items-center gap-2 pl-3 pr-4 py-1 tracking-wider bg-background/50 backdrop-blur-sm border border-gray-200/15 smooth-transition hover:bg-black/30 mb-2 rounded-3xl justify-center">
+						<div class="inline-flex items-center gap-2 pl-3 pr-4 py-1 tracking-wider bg-background/50 backdrop-blur-sm border border-gray-200/15 smooth-transition hover:bg-black/30 mb-2 rounded-3xl justify-center fade-in-item">
 							<span class="text-sm text-white text-shadow text-shadow-black"><b class="text-lg">⚡</b> Security Installations</span>
 						</div>
 					</div>
 					<h1 class="text-4xl md:text-3xl lg:text-5xl font-pixel text-shadow-[2px_2px_2px,2px_2px_5px] font-bold text-white text-shadow-red-900 leading-[1.4em] tracking-wide order-1">
-						NEW YORK CITY <span class="text-secondary">ELECTRIC</span>
+						<span data-split="letters"
+							data-parallax="20">NEW YORK CITY</span> <span data-split="letters"
+							data-parallax="20" class="text-secondary">ELECTRIC</span>
 					</h1>
-					<p class="text-sm lg:text-base text-foreground tracking-wider order-2 lg:order-3">From residential repairs to commercial installations, our licensed electricians deliver safe, reliable, and efficient solutions for all your electrical needs.</p>
+					<p class="text-sm lg:text-base text-foreground tracking-wider order-2 lg:order-3 fade-in">From residential repairs to commercial installations, our licensed electricians deliver safe, reliable, and efficient solutions for all your electrical needs.</p>
 					<div class="relative group w-1/2 hidden">
 						<div class="relative">
 							<img
@@ -40,13 +42,14 @@ get_header();
 					</div>
 				</div>
 
-				<div class="flex flex-wrap gap-4">
-					<button class="btn btn-primary btn-md">
-						BOOK SERVICE NOW!
+				<div class="flex flex-wrap gap-4 fade-in-group">
+					<button class="btn btn-primary btn-md fade-in-item tracking-widest relative overflow-hidden text-shadow">
+						BOOK A SERVICE NOW!
 					</button>
-					<button class="btn btn-secondary lg:btn-md font-normal">
+					<!-- <button class="btn btn-secondary lg:btn-md fade-in-item relative overflow-hidden group text-shadow">
 						OUR WORK
-					</button>
+						<span class="group-hover:animate-pulse bg-yellow-800 p-2 absolute top-0 w-full h-full left-0 opacity-0 group-hover:opacity-10"></span>
+					</button> -->
 				</div>
 
 			</div>
@@ -54,7 +57,7 @@ get_header();
 			<div class="flex justify-center order-1 lg:order-2 lg:col-span-5">
 				<div class="relative group">
 					<div class="absolute -inset-4 bg-gradient-to-r from-primary/20 via-secondary/20 to-primary/20 blur-2xl opacity-75 group-hover:opacity-100 smooth-transition"></div>
-					<div class="relative bg-black/5 p-2 lg:p-4 rounded-3xl duration-200 lg:mb-20">
+					<div class="relative bg-black/0.1 p-2 lg:p-4 rounded-3xl duration-200 lg:mb-20 fade-in">
 						<img
 							src="<?php echo get_stylesheet_directory_uri() . '/resources/images/wirenyc-logo.png' ?>"
 							alt="NYCE New York City Electric Logo"
@@ -278,10 +281,10 @@ get_header();
 <section id="contact" class="py-20 md:py-32 bg-background">
 	<div class="container">
 		<motion.div
-			initial={{ opacity: 0, y: 20 }}
-			whileInView={{ opacity: 1, y: 0 }}
-			viewport={{ once: true }}
-			transition={{ duration: 0.5 }}
+			initial { opacity: 0, y: 20 }}
+			whileInView { opacity: 1, y: 0 }}
+			viewport { once: true }}
+			transition { duration: 0.5 }}
 			class="text-center mb-16">
 			<span class="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold uppercase tracking-wider mb-4">
 				Get In Touch
@@ -296,10 +299,10 @@ get_header();
 
 		<div class="grid lg:grid-cols-2 gap-12">
 			<motion.div
-				initial={{ opacity: 0, x: -20 }}
-				whileInView={{ opacity: 1, x: 0 }}
-				viewport={{ once: true }}
-				transition={{ duration: 0.5 }}
+				initial { opacity: 0, x: -20 }}
+				whileInView { opacity: 1, x: 0 }}
+				viewport { once: true }}
+				transition { duration: 0.5 }}
 				class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 
 				<div
@@ -359,7 +362,7 @@ get_header();
 				</div>
 			</motion.div>
 
-			<form onSubmit={handleSubmit} class="p-6 md:p-8 bg-card rounded-xl border border-border">
+			<form onSubmit handleSubmit} class="p-6 md:p-8 bg-card rounded-xl border border-border">
 				<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
 					<div>
 						<label htmlFor="name" class="block text-sm font-medium text-foreground mb-2">
@@ -368,7 +371,7 @@ get_header();
 						<Input
 							id="name"
 							name="name"
-							onChange={handleChange}
+							onChange handleChange}
 							required
 							placeholder="John Smith"
 							class="border-border" />
@@ -381,7 +384,7 @@ get_header();
 							id="email"
 							name="email"
 							type="email"
-							onChange={handleChange}
+							onChange handleChange}
 							required
 							placeholder="john@example.com"
 							class="border-border" />
@@ -397,7 +400,7 @@ get_header();
 							id="phone"
 							name="phone"
 							type="tel"
-							onChange={handleChange}
+							onChange handleChange}
 							required
 							placeholder="(212) 555-0000"
 							class="border-border" />
@@ -409,7 +412,7 @@ get_header();
 						<select
 							id="service"
 							name="service"
-							onChange={handleChange}
+							onChange handleChange}
 							class="w-full h-10 px-3 rounded-md border border-border text-foreground focus:outline-none focus:ring-2 focus:ring-ring">
 							<option value="">Select a service</option>
 							<option value="residential">Residential</option>
@@ -428,13 +431,13 @@ get_header();
 					<textarea
 						id="message"
 						name="message"
-						onChange={handleChange}
+						onChange handleChange}
 						placeholder="Tell us about your electrical project..."
-						rows={4}
+						rows 4}
 						class="border-border resize-none"></textarea>
 				</div>
 
-				<Button type="submit" variant="hero" size="lg" class="w-full" disabled={isSubmitting}>
+				<Button type="submit" variant="hero" size="lg" class="w-full" disabled isSubmitting}>
 					Get Free Quote
 				</Button>
 
