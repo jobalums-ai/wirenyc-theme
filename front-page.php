@@ -57,15 +57,66 @@ get_header();
 			<div class="flex justify-center order-1 lg:order-2 lg:col-span-5">
 				<div class="relative group">
 					<div class="absolute -inset-4 bg-gradient-to-r from-primary/20 via-secondary/20 to-primary/20 blur-2xl opacity-75 group-hover:opacity-100 smooth-transition"></div>
-					<div class="relative bg-black/0.1 p-2 lg:p-4 rounded-3xl duration-200 lg:mb-20 fade-in">
+					<div class="relative bg-black/0.1 p-2 lg:p-4 rounded-3xl duration-200 lg:mb-14 fade-in">
 						<img
 							src="<?php echo get_stylesheet_directory_uri() . '/resources/images/wirenyc-logo.png' ?>"
 							alt="NYCE New York City Electric Logo"
 							class="w-full contain">
 					</div>
+
+					<?php if (!wp_is_mobile()): ?>
+						<div class=" flex-wrap justify-center items-center gap-4 fade-in-group flex">
+							<div class="overflow-hidden bg-white rounded-md backdrop-blur fade-in-item">
+								<img class="h-10" src="<?php echo get_stylesheet_directory_uri() . '/resources/images/osha-certified.png' ?>" />
+							</div>
+							<div class="overflow-hidden bg-white/10 rounded-md backdrop-blur fade-in-item">
+								<img class="h-10" src="<?php echo get_stylesheet_directory_uri() . '/resources/images/quality-assured-master-electrician.jpeg' ?>" />
+							</div>
+							<div class="overflow-hidden bg-white/10 rounded-md backdrop-blur fade-in-item">
+								<img class="h-10" src="<?php echo get_stylesheet_directory_uri() . '/resources/images/lutron-pro-logo.png' ?>" />
+							</div>
+							<div class="overflow-hidden bg-white/10 rounded-md backdrop-blur fade-in-item">
+								<img class="h-10" src="<?php echo get_stylesheet_directory_uri() . '/resources/images/Lutron_Pro-gold.png' ?>" />
+							</div>
+							<div class="overflow-hidden rounded-md backdrop-blur fade-in-item">
+								<img class="h-20" src="<?php echo get_stylesheet_directory_uri() . '/resources/images/osha-trained.png' ?>" />
+							</div>
+							<div class="overflow-hidden rounded-md backdrop-blur fade-in-item">
+								<img class="h-20" src="<?php echo get_stylesheet_directory_uri() . '/resources/images/EPA-Lead-Certified.png' ?>" />
+							</div>
+							<div class="overflow-hidden rounded-md backdrop-blur fade-in-item">
+								<img class="h-20" src="<?php echo get_stylesheet_directory_uri() . '/resources/images/five-boro-logo.svg' ?>" />
+							</div>
+						</div>
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>
+		<?php if (wp_is_mobile()): ?>
+			<div class=" flex-wrap justify-center items-center gap-4 fade-in-group flex lg:!hidden mt-10">
+				<div class="overflow-hidden bg-white rounded-md backdrop-blur fade-in-item">
+					<img class="h-10" src="<?php echo get_stylesheet_directory_uri() . '/resources/images/osha-certified.png' ?>" />
+				</div>
+				<div class="overflow-hidden bg-white/10 rounded-md backdrop-blur fade-in-item">
+					<img class="h-10" src="<?php echo get_stylesheet_directory_uri() . '/resources/images/quality-assured-master-electrician.jpeg' ?>" />
+				</div>
+				<div class="overflow-hidden bg-white/10 rounded-md backdrop-blur fade-in-item">
+					<img class="h-10" src="<?php echo get_stylesheet_directory_uri() . '/resources/images/lutron-pro-logo.png' ?>" />
+				</div>
+				<div class="overflow-hidden bg-white/10 rounded-md backdrop-blur fade-in-item">
+					<img class="h-10" src="<?php echo get_stylesheet_directory_uri() . '/resources/images/Lutron_Pro-gold.png' ?>" />
+				</div>
+				<div class="overflow-hidden rounded-md backdrop-blur fade-in-item">
+					<img class="h-14" src="<?php echo get_stylesheet_directory_uri() . '/resources/images/osha-trained.png' ?>" />
+				</div>
+				<div class="overflow-hidden rounded-md backdrop-blur fade-in-item">
+					<img class="h-14" src="<?php echo get_stylesheet_directory_uri() . '/resources/images/EPA-Lead-Certified.png' ?>" />
+				</div>
+				<div class="overflow-hidden rounded-md backdrop-blur fade-in-item">
+					<img class="h-14" src="<?php echo get_stylesheet_directory_uri() . '/resources/images/five-boro-logo.svg' ?>" />
+				</div>
+			</div>
+		<?php endif; ?>
 		<div class="my-20  bg-black"></div>
 	</div>
 </section>
@@ -293,7 +344,7 @@ get_header();
 		</div>
 	</div>
 </section>
-
+<!-- 
 <section id="contact" class="py-20 md:py-32 bg-background">
 	<div class="container">
 		<motion.div
@@ -461,6 +512,28 @@ get_header();
 					We respond to all inquiries within 24 hours.
 				</p>
 			</form>
+		</div>
+	</div>
+</section> -->
+
+<section class="py-20 bg-slate-900 relative overflow-hidden">
+	<div class="absolute inset-0">
+		<div class="absolute top-10 left-10 w-64 h-64 bg-secondary/20 rounded-full blur-3xl"></div>
+		<div class="absolute bottom-10 right-10 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
+	</div>
+
+	<div class="container mx-auto px-4 relative z-10 text-center fade-in-group">
+		<h2 class="font-modern text-shadow-3xl text-3xl md:text-4xl lg:text-5xl font-bold text-secondary font-pixel text-shadow-xl mb-6 fade-in-item">
+			Ready to Power Up Your Project?
+		</h2>
+		<p class="text-primary-foreground/70 text-lg mb-8 max-w-2xl mx-auto fade-in-item text-white/95">
+			Contact us today for a free consultation and estimate.
+			Our expert team is ready to help with all your electrical needs.
+		</p>
+		<div class="flex flex-wrap justify-center gap-4 fade-in-item">
+			<button class="btn btn-primary btn-md tracking-widest relative overflow-hidden text-shadow">
+				BOOK A SERVICE NOW!
+			</button>
 		</div>
 	</div>
 </section>
