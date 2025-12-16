@@ -16,75 +16,55 @@
     <div class="container py-12 md:py-16">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             <div class="lg:col-span-1">
-                <a href="#" class="flex items-center gap-2 mb-4">
-                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                        <Zap class="w-6 h-6 text-primary-foreground" />
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="font-display text-xl font-bold text-foreground leading-none">NYCE</span>
-                        <span class="text-[10px] text-muted-foreground tracking-widest uppercase">NYC Electric</span>
-                    </div>
-                </a>
-                <p class="text-muted-foreground text-sm mb-4">
-                    Powering New York City since 2003. Licensed, insured, and committed to excellence.
-                </p>
-                <div class="flex gap-4">
-                    <a href="#" class="text-muted-foreground hover:text-primary transition-colors">
-                        <Facebook class="w-5 h-5" />
-                    </a>
-                    <a href="#" class="text-muted-foreground hover:text-primary transition-colors">
-                        <Instagram class="w-5 h-5" />
-                    </a>
-                    <a href="#" class="text-muted-foreground hover:text-primary transition-colors">
-                        <Twitter class="w-5 h-5" />
-                    </a>
-                    <a href="#" class="text-muted-foreground hover:text-primary transition-colors">
-                        <Linkedin class="w-5 h-5" />
-                    </a>
+                <div class="-mt-5">
+                    <img
+                        src="<?php echo get_stylesheet_directory_uri() . '/resources/images/wirenyc-logo.png' ?>"
+                        alt="NYCE New York City Electric Logo"
+                        class="w-full contain">
                 </div>
             </div>
-
+            <div></div>
             <div>
                 <h3 class="font-display font-semibold text-foreground mb-4">Services</h3>
                 <ul class="space-y-2">
                     <li>
-                        <a href="#services" class="text-muted-foreground hover:text-primary transition-colors text-sm">
-                            Test
-                        </a>
+                        <span class="text-foreground text-sm hover:text-secondary cursor-pointer">Lighting Upgrades</span>
                     </li>
-                </ul>
-            </div>
-
-            <div>
-                <h3 class="font-display font-semibold text-foreground mb-4">Service Areas</h3>
-                <ul class="space-y-2">
-                    {["Manhattan", "Brooklyn", "Queens", "The Bronx", "Staten Island", "Long Island"].map((item) => (
-                    <li key={item}>
-                        <span class="text-muted-foreground text-sm">{item}</span>
+                    <li>
+                        <span class="text-foreground text-sm hover:text-secondary cursor-pointer">Custom Fixture Installations</span>
                     </li>
-                    ))}
+                    <li>
+                        <span class="text-foreground text-sm hover:text-secondary cursor-pointer">Panel Replacements/Upgrades</span>
+                    </li>
+                    <li>
+                        <span class="text-foreground text-sm hover:text-secondary cursor-pointer">Lutron Controls</span>
+                    </li>
+                    <li>
+                        <span class="text-foreground text-sm hover:text-secondary cursor-pointer">Lutron Shades And Window Treatments</span>
+                    </li>
                 </ul>
             </div>
 
             <div>
                 <h3 class="font-display font-semibold text-foreground mb-4">Contact</h3>
-                <ul class="space-y-2 text-sm text-muted-foreground">
+                <ul class="space-y-2 text-sm text-foreground">
                     <li>123 Electric Ave</li>
                     <li>New York, NY 10001</li>
                     <li class="text-primary font-semibold">(212) 555-1234</li>
                     <li>info@nycelectric.com</li>
                 </ul>
             </div>
+
         </div>
 
         <div class="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-            <p class="text-muted-foreground text-sm">
-                © {currentYear} NYCE - New York City Electric. All rights reserved.
+            <p class="text-foreground text-sm">
+                ©2026 NYCE - New York City Electric. All rights reserved.
             </p>
             <div class="flex gap-6 text-sm">
-                <a href="#" class="text-muted-foreground hover:text-primary transition-colors">Privacy Policy</a>
-                <a href="#" class="text-muted-foreground hover:text-primary transition-colors">Terms of Service</a>
-                <a href="#" class="text-muted-foreground hover:text-primary transition-colors">Sitemap</a>
+                <a href="#" class="text-foreground hover:text-primary transition-colors">Privacy Policy</a>
+                <a href="#" class="text-foreground hover:text-primary transition-colors">Terms of Service</a>
+                <a href="#" class="text-foreground hover:text-primary transition-colors">Sitemap</a>
             </div>
         </div>
     </div>
