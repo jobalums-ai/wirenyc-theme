@@ -72,80 +72,96 @@ get_header();
 <section id="services" class="py-20 md:py-32 bg-black/95 relative" style="background-image: url(<?php echo get_stylesheet_directory_uri() . '/resources/images/bg-1.jpeg'; ?>); background-size: cover;background-attachment: fixed;">
 	<div class="absolute inset-0 bg-gradient-to-br from-black/85 via-background/90 to-background/80 z-0"></div>
 	<div class="container relative">
-		<div class="text-center mb-16 z-20" style="opacity: 1; transform: none;">
-			<span class="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold uppercase tracking-wider mb-4">Our Services</span>
-			<h2 class="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4"><span class="text-secondary">Residential & Commercial</span> <br />Electrical Services in Tri-State Area</h2>
-			<p class="text-lg text-muted-foreground max-w-2xl mx-auto uppercase">Licensed, Insured, Knowledgeable Electricians You can Trust.</p>
+		<div class="text-center mb-16 z-20 fade-in-group" style="opacity: 1; transform: none;">
+			<span class="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold uppercase tracking-wider mb-4 fade-in-item">Our Services</span>
+			<h2 class="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4 fade-in-item"><span class="text-secondary">Residential & Commercial</span> <br />Electrical Services in Tri-State Area</h2>
+			<p class="text-lg text-muted-foreground max-w-2xl mx-auto uppercase fade-in-item">Licensed, Insured, Knowledgeable Electricians You can Trust.</p>
 		</div>
-		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-			<div class="group relative p-6 bg-card/50 backdrop-blur-[2px] rounded-xl border border-yellow-600/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5" style="opacity: 1; transform: none;">
-				<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house w-7 h-7 text-secondary">
-						<path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
-						<path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-					</svg></div>
-				<h3 class="text-xl font-display font-semibold text-foreground mb-2">Electrical system design and installation</h3>
-				<p class="text-muted-foreground text-sm leading-relaxed">We design and install complete electrical systems tailored to your building’s needs, ensuring safety, reliability, and efficient power distribution.</p>
+		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 fade-in-group">
+			<div class="group relative p-6 bg-card/50 fade-in-item backdrop-blur-[2px] rounded-xl border border-yellow-600/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5">
+				<div class="flex gap-4 flex-nowrap">
+					<div class="w-14 h-14 aspect-square bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house w-7 h-7 text-secondary">
+							<path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+							<path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+						</svg></div>
+					<h3 class="text-xl font-display font-semibold text-white/80 mb-2">Electrical system design and installation</h3>
+				</div>
+				<p class="text-secondary/70 text-sm leading-relaxed mt-5">We design and install complete electrical systems tailored to your building’s needs, ensuring safety, reliability, and efficient power distribution.</p>
 			</div>
-			<div class="group relative p-6 bg-card/50 backdrop-blur-[2px] rounded-xl border border-yellow-600/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5" style="opacity: 1; transform: none;">
-				<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2 w-7 h-7 text-secondary">
-						<path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
-						<path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
-						<path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path>
-						<path d="M10 6h4"></path>
-						<path d="M10 10h4"></path>
-						<path d="M10 14h4"></path>
-						<path d="M10 18h4"></path>
-					</svg></div>
-				<h3 class="text-xl font-display font-semibold text-foreground mb-2">Electrical panel installation and upgrades</h3>
-				<p class="text-muted-foreground text-sm leading-relaxed">We install new electrical panels or upgrade existing ones to support higher power demands and improve overall system safety and performance.</p>
+			<div class="group relative p-6 bg-card/50 fade-in-item backdrop-blur-[2px] rounded-xl border border-yellow-600/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5">
+				<div class="flex gap-4 flex-nowrap">
+					<div class="w-14 h-14 aspect-square bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2 w-7 h-7 text-secondary">
+							<path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
+							<path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
+							<path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path>
+							<path d="M10 6h4"></path>
+							<path d="M10 10h4"></path>
+							<path d="M10 14h4"></path>
+							<path d="M10 18h4"></path>
+						</svg></div>
+					<h3 class="text-xl font-display font-semibold text-white/80 mb-2">Electrical panel installation and upgrades</h3>
+				</div>
+				<p class="text-secondary/70 text-sm leading-relaxed mt-5">We install new electrical panels or upgrade existing ones to support higher power demands and improve overall system safety and performance.</p>
 			</div>
-			<div class="group relative p-6 bg-card/50 backdrop-blur-[2px] rounded-xl border border-yellow-600/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5" style="opacity: 1; transform: none;">
-				<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-factory w-7 h-7 text-secondary">
-						<path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path>
-						<path d="M17 18h1"></path>
-						<path d="M12 18h1"></path>
-						<path d="M7 18h1"></path>
-					</svg></div>
-				<h3 class="text-xl font-display font-semibold text-foreground mb-2">Lighting upgrades</h3>
-				<p class="text-muted-foreground text-sm leading-relaxed">We enhance your lighting system with modern, energy-efficient solutions that improve brightness, reduce energy costs, and create a better environment.</p>
+			<div class="group relative p-6 bg-card/50 fade-in-item backdrop-blur-[2px] rounded-xl border border-yellow-600/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5">
+				<div class="flex gap-4 flex-nowrap items-center">
+					<div class="w-14 h-14 aspect-square bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-factory w-7 h-7 text-secondary">
+							<path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path>
+							<path d="M17 18h1"></path>
+							<path d="M12 18h1"></path>
+							<path d="M7 18h1"></path>
+						</svg></div>
+					<h3 class="text-xl font-display font-semibold text-white/80 mb-2">Lighting upgrades</h3>
+				</div>
+				<p class="text-secondary/70 text-sm leading-relaxed mt-5">We enhance your lighting system with modern, energy-efficient solutions that improve brightness, reduce energy costs, and create a better environment.</p>
 			</div>
-			<div class="group relative p-6 bg-card/50 backdrop-blur-[2px] rounded-xl border border-yellow-600/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5" style="opacity: 1; transform: none;">
-				<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb w-7 h-7 text-secondary">
-						<path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path>
-						<path d="M9 18h6"></path>
-						<path d="M10 22h4"></path>
-					</svg></div>
-				<h3 class="text-xl font-display font-semibold text-foreground mb-2">Door access control and CCTV systems</h3>
-				<p class="text-muted-foreground text-sm leading-relaxed">Custom lighting solutions that enhance ambiance, improve efficiency, and reduce energy costs.</p>
+			<div class="group relative p-6 bg-card/50 fade-in-item backdrop-blur-[2px] rounded-xl border border-yellow-600/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5">
+				<div class="flex gap-4 flex-nowrap items-center">
+					<div class="w-14 h-14 aspect-square bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb w-7 h-7 text-secondary">
+							<path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path>
+							<path d="M9 18h6"></path>
+							<path d="M10 22h4"></path>
+						</svg></div>
+					<h3 class="text-xl font-display font-semibold text-white/80 mb-2">Door access control and CCTV systems</h3>
+				</div>
+				<p class="text-secondary/70 text-sm leading-relaxed mt-5">Custom lighting solutions that enhance ambiance, improve efficiency, and reduce energy costs.</p>
 			</div>
-			<div class="group relative p-6 bg-card/50 backdrop-blur-[2px] rounded-xl border border-yellow-600/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5" style="opacity: 1; transform: none;">
-				<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-7 h-7 text-secondary">
-						<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
-					</svg></div>
-				<h3 class="text-xl font-display font-semibold text-foreground mb-2">Electrical Safety</h3>
-				<p class="text-muted-foreground text-sm leading-relaxed">Comprehensive safety inspections, surge protection, and code compliance to protect your property.</p>
+			<div class="group relative p-6 bg-card/50 fade-in-item backdrop-blur-[2px] rounded-xl border border-yellow-600/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5">
+				<div class="flex gap-4 flex-nowrap items-center">
+					<div class="w-14 h-14 aspect-square bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-7 h-7 text-secondary">
+							<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+						</svg></div>
+					<h3 class="text-xl font-display font-semibold text-white/80 mb-2">Electrical Safety</h3>
+				</div>
+				<p class="text-secondary/70 text-sm leading-relaxed mt-5">Comprehensive safety inspections, surge protection, and code compliance to protect your property.</p>
 			</div>
-			<div class="group relative p-6 bg-card/50 backdrop-blur-[2px] rounded-xl border border-yellow-600/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5" style="opacity: 1; transform: none;">
-				<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gauge w-7 h-7 text-secondary">
-						<path d="m12 14 4-4"></path>
-						<path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
-					</svg></div>
-				<h3 class="text-xl font-display font-semibold text-foreground mb-2">Panel Upgrades</h3>
-				<p class="text-muted-foreground text-sm leading-relaxed">Modernize your electrical panel to handle today's power demands and improve safety.</p>
+			<div class="group relative p-6 bg-card/50 fade-in-item backdrop-blur-[2px] rounded-xl border border-yellow-600/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5">
+				<div class="flex gap-4 flex-nowrap items-center">
+					<div class="w-14 h-14 aspect-square bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gauge w-7 h-7 text-secondary">
+							<path d="m12 14 4-4"></path>
+							<path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
+						</svg></div>
+					<h3 class="text-xl font-display font-semibold text-white/80 mb-2">Panel Upgrades</h3>
+				</div>
+				<p class="text-secondary/70 text-sm leading-relaxed mt-5">Modernize your electrical panel to handle today's power demands and improve safety.</p>
 			</div>
-			<div class="group relative p-6 bg-card/50 backdrop-blur-[2px] rounded-xl border border-yellow-600/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5" style="opacity: 1; transform: none;">
-				<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wrench w-7 h-7 text-secondary">
-						<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
-					</svg></div>
-				<h3 class="text-xl font-display font-semibold text-foreground mb-2">Repairs &amp; Maintenance</h3>
-				<p class="text-muted-foreground text-sm leading-relaxed">Fast, reliable repairs and preventive maintenance to keep your electrical systems running smoothly.</p>
+			<div class="group relative p-6 bg-card/50 fade-in-item backdrop-blur-[2px] rounded-xl border border-yellow-600/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5">
+				<div class="flex gap-4 flex-nowrap items-center">
+					<div class="w-14 h-14 aspect-square bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wrench w-7 h-7 text-secondary">
+							<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+						</svg></div>
+					<h3 class="text-xl font-display font-semibold text-white/80 mb-2">Repairs &amp; Maintenance</h3>
+				</div>
+				<p class="text-secondary/70 text-sm leading-relaxed mt-5">Fast, reliable repairs and preventive maintenance to keep your electrical systems running smoothly.</p>
 			</div>
-			<div class="group relative p-6 bg-card/50 backdrop-blur-[2px] rounded-xl border border-yellow-600/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5" style="opacity: 1; transform: none;">
-				<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-7 h-7 text-secondary">
-						<path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
-					</svg></div>
-				<h3 class="text-xl font-display font-semibold text-foreground mb-2">Emergency Services</h3>
-				<p class="text-muted-foreground text-sm leading-relaxed">24/7 emergency response for electrical emergencies. We're here when you need us most.</p>
+			<div class="group relative p-6 bg-card/50 fade-in-item backdrop-blur-[2px] rounded-xl border border-yellow-600/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5">
+				<div class="flex gap-4 flex-nowrap items-center">
+					<div class="w-14 h-14 aspect-square bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-7 h-7 text-secondary">
+							<path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+						</svg></div>
+					<h3 class="text-xl font-display font-semibold text-white/80 mb-2">Emergency Services</h3>
+				</div>
+				<p class="text-secondary/70 text-sm leading-relaxed mt-5">24/7 emergency response for electrical emergencies. We're here when you need us most.</p>
 			</div>
 		</div>
 	</div>

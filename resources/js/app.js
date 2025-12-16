@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 					{
 						opacity: 1,
 						scale: 1,
-						duration: 1,
+						duration: 0.5,
 						ease: "power3.inOut",
 						stagger: 0.1,
 						scrollTrigger: {

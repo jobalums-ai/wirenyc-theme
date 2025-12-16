@@ -12,7 +12,7 @@
 </div>
 
 <?php do_action('tailpress_content_after'); ?>
-<footer class="bg-card border-t border-border">
+<footer class="bg-slate-950">
     <div class="container py-12 md:py-16">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             <div class="lg:col-span-1">
