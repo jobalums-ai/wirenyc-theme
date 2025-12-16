@@ -88,12 +88,12 @@ get_header();
 <section class="py-20 bg-black">
 	<div class="container mx-auto px-4">
 		<div class="grid lg:grid-cols-2 gap-16 items-center">
-			<div class="space-y-6">
-				<span class="text-accent font-semibold uppercase tracking-wider text-sm">Our Story</span>
-				<h2 class="font-display text-3xl md:text-4xl font-bold text-slate-200">
+			<div class="space-y-6 fade-in-group">
+				<span class="text-accent font-semibold uppercase tracking-wider text-sm fade-in-item">Our Story</span>
+				<h2 class="font-display text-3xl md:text-4xl font-bold text-slate-200 fade-in-item">
 					Building Trust Through Quality Electrical Work
 				</h2>
-				<div class="space-y-4 text-slate-300 tracking-wide">
+				<div class="space-y-4 text-slate-300 tracking-wide fade-in-item">
 					<p>
 						Third generation electrician Daniel Weissman currently holds master electrical licenses in New York City, New Jersey, Delaware, Florida, USVI and Connecticut.
 					</p>
@@ -110,8 +110,8 @@ get_header();
 			</div>
 
 			<div class="relative">
-				<div class="grid grid-cols-2 gap-4">
-					<div class="space-y-4">
+				<div class="grid grid-cols-2 gap-4 fade-in-group">
+					<div class="space-y-4 fade-in-item">
 						<div class="bg-slate-950 border-slate-800 border rounded-2xl p-6 text-primary-foreground flex flex-col">
 							<span class="w-8 h-8 mb-4 text-accent"></span>
 							<p class="font-display text-2xl font-bold">5000+</p>
@@ -123,7 +123,7 @@ get_header();
 							<p class="text-accent-foreground/70 text-sm">BBB Accredited</p>
 						</div>
 					</div>
-					<div class="space-y-4 mt-8">
+					<div class="space-y-4 mt-8 fade-in-item">
 						<div class="bg-secondary rounded-2xl p-6 flex flex-col">
 							<span class="w-8 h-8 mb-4 text-accent"></span>
 							<p class="font-display text-2xl font-bold text-foreground">35+</p>
@@ -143,7 +143,7 @@ get_header();
 
 <section class="py-20 bg-slate-950">
 	<div class="container mx-auto px-4">
-		<div class="text-center mb-16">
+		<div class="text-center mb-16 fade-in">
 			<span class="text-accent font-semibold uppercase tracking-wider text-sm shadow-xs shadow-amber-200 py-2 px-4 rounded-3xl">Our Values</span>
 			<h2 class="font-display text-3xl md:text-4xl font-bold text-foreground mt-10 ">
 				What Sets Us Apart
